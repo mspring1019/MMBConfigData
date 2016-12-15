@@ -1,2 +1,2 @@
 # MMBConfigData
-mmb-config-client.yml
+data中包含统一中心化配置
