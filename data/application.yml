@@ -1,2 +1,6 @@
-thidsl:
-  oii: a
+eureka:
+  client:
+    healthcheck:
+      enable: true
+    serviceUrl:
+      defaultZone: http://user:8888@localhost:8761/eureka 
