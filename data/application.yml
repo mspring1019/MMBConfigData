@@ -1,5 +1,3 @@
-server:
-  port: 8761
 eureka:
   client:
     healthcheck:
@@ -10,9 +8,3 @@ eureka:
     metadataMap:
       instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     preferIpAddress: true
-security:
-  basic: 
-    enabled: true
-  user:
-    name: user
-    password: 8888
