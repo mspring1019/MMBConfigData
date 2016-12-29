@@ -7,3 +7,25 @@
 spring:
   profiles:
     active: dev
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&autoReconnect=true&failOverReadOnly=false&maxReconnects=10
+    data-source-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: douweibing
+    initial-size: 10
+    maximum-pool-size: 300
+    max-idle: 30
+    min-idle: 2
+    max-wait: 60000
+    max-active: 1000
+    connection-test-query: select 1
+    validation-interval: 30000
+    validation-query: select 1
+    time-between-eviction-runs-millis: 3600000
+    min-evictable-idle-time-millis: 18000000
+    default-read-only: false
+    test-on-borrow: true
+    test-on-return: true
+    test-while-idle: true
+    read-only: true
+    jdbc-interceptors: org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer
