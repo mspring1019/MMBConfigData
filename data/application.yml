@@ -4,5 +4,6 @@
 #      enable: true
 #    serviceUrl:
 #      defaultZone: http://user:8888@localhost:8761/eureka 
-wordConfig:
-  luckyWord: ppppppppppppp
+spring:
+  profiles:
+    active: dev
