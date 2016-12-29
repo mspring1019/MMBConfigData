@@ -74,4 +74,4 @@ springfox:
       v2:
         path: /api-docs
 wordConfig:
-  luckyWord: hi~body!
+  luckyWord: no-hi~GiGi!
