@@ -18,10 +18,3 @@ security:
   user:
     name: user
     password: 8888
-spring:
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/coaf/MMBConfigData
-          searchPaths: data 
