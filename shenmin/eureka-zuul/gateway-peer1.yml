@@ -1,0 +1,25 @@
+server:
+  port: 5555
+  tomcat:
+    accesslog:
+      enabled: true
+  error:
+    whitelabel:
+      enabled: false
+spring: 
+  application: 
+    name: zuul-gateway
+eureka: 
+  client: 
+    serviceUrl:
+      defaultZone: http://user:8888@localhost:8761/eureka,http://user:8888@localhost:8762/eureka,http://user:8888@localhost:8763/eureka
+    healthcheck:
+      enable: true
+  instance:
+    prefer-ip-address: true
+    instanceId: ${spring.application.name}:${server.port}
+zuul:
+  routes:
+    api-a: #服务动态路由映射
+      path: /wj-server/**
+      serviceId: wj-server
