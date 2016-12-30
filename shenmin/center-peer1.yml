@@ -19,9 +19,3 @@ security:
 spring:
   application:
     name: server-center
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/coaf/MMBConfigData
-          searchPaths: data
