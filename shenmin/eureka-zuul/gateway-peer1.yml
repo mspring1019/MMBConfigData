@@ -23,3 +23,6 @@ zuul:
     api-a: #服务动态路由映射
       path: /wj-server/**
       serviceId: wj-server
+    api-b:
+      path: /feign-consumer1/**
+      serviceId: feign-consumer1
