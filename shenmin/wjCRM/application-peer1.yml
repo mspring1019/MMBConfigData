@@ -65,3 +65,6 @@ springfox:
     swagger: 
       v2:
         path: /api-docs
+endpoints:
+  jmx:
+    unique-names: true
