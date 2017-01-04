@@ -31,7 +31,7 @@ spring:
   pid:
     fail-on-write-error: true
   application: 
-    name: wj-server
+    name: newwj-server
 server:
   port: 8282
   tomcat:
