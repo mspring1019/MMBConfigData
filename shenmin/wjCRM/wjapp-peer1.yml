@@ -68,3 +68,5 @@ springfox:
 endpoints:
   jmx:
     unique-names: true
+  restart:
+    enabled: true
