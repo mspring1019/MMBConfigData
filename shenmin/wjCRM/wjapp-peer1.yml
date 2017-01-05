@@ -22,7 +22,7 @@ spring:
     read-only: true
     jdbc-interceptors: org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer
   redis:
-    host: 192.168.1.233
+    host: 127.0.0.1
     port: 6379
   mvc:
     view:
